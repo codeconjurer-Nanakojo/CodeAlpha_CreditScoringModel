@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+ENV/
+
+# Large data files
+data/raw/
+data/processed/
+data/external/
+*.csv
+*.pkl
+*.pickle
+*.h5
+*.feather
+*.parquet
+
+# Model files
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Logs and outputs
+logs/
+*.log
+*.sqlite
+
+# DVC cache
+.dvc/
+.dvc_temp/
+
+# OS generated files
+.DS_Store
+Thumbs.db

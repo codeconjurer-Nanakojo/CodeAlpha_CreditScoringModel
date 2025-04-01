@@ -1,0 +1,78 @@
+Credit_Scoring_Model/
+│
+├── data/                          # Data Management
+│   ├── raw/                       # Original immutable data
+│   ├── processed/                 # Processed datasets
+│   ├── external/                  # Third-party data sources
+│   └── interim/                   # Intermediate processing steps
+│
+├── notebooks/                     # Jupyter Notebooks
+│   ├── 01_EDA/
+│   │   ├── 01_data_profiling.ipynb
+│   │   └── 02_target_analysis.ipynb
+│   ├── 02_Feature_Engineering/
+│   │   ├── 01_feature_selection.ipynb
+│   │   └── 02_feature_transformation.ipynb
+│   ├── 03_Model_Development/
+│   │   ├── 01_baseline_models.ipynb
+│   │   └── 02_advanced_models.ipynb
+│   ├── 04_Model_Evaluation/
+│   │   ├── 01_performance_metrics.ipynb
+│   │   └── 02_model_interpretation.ipynb
+│   └── 05_Visualization/          # NEW: Dedicated visualization
+│       ├── 01_feature_importance.ipynb
+│       ├── 02_decision_boundaries.ipynb
+│       └── 03_shap_analysis.ipynb
+│
+├── src/                           # Production Code
+│   ├── data/                      # Data pipelines
+│   │   ├── make_dataset.py
+│   │   └── build_features.py
+│   ├── models/                    # Modeling
+│   │   ├── train_model.py
+│   │   └── predict_model.py
+│   ├── visualization/             # NEW: Visualization module
+│   │   ├── plot_metrics.py
+│   │   ├── shap_visualizer.py
+│   │   └── feature_plots.py
+│   ├── app/                       # Web App
+│   │   ├── static/                # JS/CSS
+│   │   └── templates/             # HTML
+│   └── utils/                     # Utilities
+│       ├── logger.py
+│       └── helpers.py
+│
+├── models/                        # Serialized Models
+│   ├── production/                # Production-ready models
+│   ├── experimental/              # Experimental models
+│   └── benchmarks/                # Benchmark comparisons
+│
+├── reports/                       # Outputs
+│   ├── figures/                   # NEW: Visualizations
+│   │   ├── feature_importance.png
+│   │   ├── roc_curves/
+│   │   └── shap_summary/
+│   ├── presentations/             # Slide decks
+│   └── paper/                     # Final report
+│
+├── tests/                         # Testing
+│   ├── unit/                      # Unit tests
+│   └── integration/               # Integration tests
+│
+├── config/                        # Configuration
+│   ├── model_config.yml           # Model parameters
+│   └── app_config.yml             # App settings
+│
+├── .github/                       # CI/CD
+│   └── workflows/
+│       ├── tests.yml
+│       └── deploy.yml
+│
+├── docs/                          # Documentation
+│   ├── api.md                     # API docs
+│   └── model_card.md              # Model documentation
+│
+├── requirements.txt               # Python dependencies
+├── Makefile                       # Automation commands
+├── pyproject.toml                 # Modern Python config
+└── README.md                      # Project overviewpyt
